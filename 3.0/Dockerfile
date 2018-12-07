@@ -14,7 +14,8 @@ RUN set -ex; \
     #wget https://github.com/ossrs/srs/archive/${SRS_COMMIT}.tar.gz; \
     wget https://github.com/akshayh696/srs-stream/archive/${SRS_COMMIT}.tar.gz; \
     tar zxf ${SRS_COMMIT}.tar.gz; \
-    cd srs-${SRS_COMMIT}/trunk; \
+    cd ${SRS_COMMIT}/trunk; \
+#   cd srs-${SRS_COMMIT}/trunk; \
     ./configure --prefix=/srs ${SRS_CONFIGURE_ARGS}; \
     make; \
     make install; \
