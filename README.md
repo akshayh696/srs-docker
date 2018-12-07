@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 srs
 ===
 A dockerized [Simple RTMP Server](https://github.com/winlinvip/simple-rtmp-server).
@@ -85,3 +86,7 @@ The setup for this example is a bit more involved due to the need to support bot
   Using this setup, we can scale up our max bandwidth without stressing the srs server.
 
 ![hsfztv](https://cdn.hsfztv.net/media/dance-2014-screenshot.png)
+=======
+# srs-docker
+Docker files for the SRS Stream deployment.
+>>>>>>> 68c7d75bfe3b7e09f3d6675354339b6dfd0e0792
