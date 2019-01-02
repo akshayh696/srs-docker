@@ -73,7 +73,6 @@ The setup for this example is a bit more involved due to the need to support bot
 * **origin**:
   This server runs near the streaming source, it transcodes input stream to 720p h264 + aac.
   It will then distribute this transcoded stream via rtmp to multiple edge servers.
-
 * **edge**:
   We run two of these servers.
   The edge server transcodes the 720p stream into 463p, 360p and 216p.
