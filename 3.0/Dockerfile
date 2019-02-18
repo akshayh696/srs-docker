@@ -24,6 +24,7 @@ RUN set -ex; \
 COPY ./srs.conf /srs/conf/docker.conf
 COPY ./srs-cust.conf /srs/conf/srs-cust.conf
 
+
 FROM debian:jessie-slim AS dist
 ARG SRS_VERSION
 ENV SRS_VERSION=${SRS_VERSION}
