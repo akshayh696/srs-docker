@@ -22,7 +22,7 @@ RUN set -ex; \
     rm -rf /tmp/*; \
     rm -rf /var/lib/apt/lists/*;
 COPY ./srs.conf /srs/conf/docker.conf
-COPY ./srs-cust.conf /srs/conf/docker.conf
+COPY ./srs-cust.conf /srs/conf/srs-conf.conf
 
 FROM debian:jessie-slim AS dist
 ARG SRS_VERSION
