@@ -4,7 +4,7 @@ FROM debian:jessie AS build
 #https://github.com/akshayh696/srs-stream/archive/1.1.tar.gz
 ARG SRS_VERSION
 ENV SRS_VERSION=${SRS_VERSION}
-ENV SRS_COMMIT=1.5
+ENV SRS_COMMIT=1.6
 ENV SRS_CONFIGURE_ARGS=
 
 RUN set -ex; \
