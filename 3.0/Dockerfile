@@ -4,7 +4,7 @@ FROM debian:jessie AS build
 #https://github.com/akshayh696/srs-stream/archive/1.1.tar.gz
 ARG SRS_VERSION
 ENV SRS_VERSION=${SRS_VERSION}
-ENV SRS_COMMIT=1.4
+ENV SRS_COMMIT=1.5
 ENV SRS_CONFIGURE_ARGS=
 
 RUN set -ex; \
@@ -22,7 +22,7 @@ RUN set -ex; \
     rm -rf /tmp/*; \
     rm -rf /var/lib/apt/lists/*;
 COPY ./srs.conf /srs/conf/docker.conf
-COPY ./srs-cust.conf /srs/conf/srs-conf.conf
+COPY ./srs-cust.conf /srs/conf/srs-cust.conf
 
 FROM debian:jessie-slim AS dist
 ARG SRS_VERSION
